@@ -71,7 +71,7 @@ class TestPetShop < Minitest::Test
         name: "Camelot of Pets"
       }
   end
-
+  
   def test_pet_shop_name
     name = pet_shop_name(@pet_shop)
     assert_equal("Camelot of Pets", name)
@@ -88,11 +88,11 @@ class TestPetShop < Minitest::Test
     assert_equal(1010, cash)
   end
 
-  # def test_add_or_remove_cash__remove
-  #   add_or_remove_cash(@pet_shop,-10)
-  #   cash = total_cash(@pet_shop)
-  #   assert_equal(990, cash)
-  # end
+  def test_add_or_remove_cash__remove
+    add_or_remove_cash(@pet_shop,-10)
+    cash = total_cash(@pet_shop)
+    assert_equal(990, cash)
+  end
 
   # def test_pets_sold
   #   sold = pets_sold(@pet_shop)
