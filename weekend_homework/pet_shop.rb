@@ -13,3 +13,8 @@ end
 def pets_sold (num_pet_sold)
   return @pet_shop[:admin][:pets_sold]
 end
+
+def increase_pets_sold(act_pet_sold, new_pet_sold)
+  return @pet_shop[:admin][:pets_sold] += new_pet_sold
+
+end
