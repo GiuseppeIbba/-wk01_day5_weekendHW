@@ -16,5 +16,8 @@ end
 
 def increase_pets_sold(act_pet_sold, new_pet_sold)
   return @pet_shop[:admin][:pets_sold] += new_pet_sold
+end
 
+def stock_count(count)
+  p @pet_shop[:pets].size
 end
