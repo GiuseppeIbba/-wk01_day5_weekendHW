@@ -7,5 +7,9 @@ def total_cash(total)
 end
 
 def add_or_remove_cash(total_cash, money_earned)
-  p @pet_shop[:admin][:total_cash] += money_earned
+  return @pet_shop[:admin][:total_cash] += money_earned
+end
+
+def pets_sold (num_pet_sold)
+  return @pet_shop[:admin][:pets_sold]
 end
