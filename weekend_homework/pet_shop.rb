@@ -19,5 +19,9 @@ def increase_pets_sold(act_pet_sold, new_pet_sold)
 end
 
 def stock_count(count)
-  p @pet_shop[:pets].size
+  return @pet_shop[:pets].size
+end
+
+def pets_by_breed(pet, breed_name)
+  p pet[:pets][:breed].find.to_i(breed_name)
 end
