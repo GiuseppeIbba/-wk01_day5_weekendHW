@@ -7,6 +7,7 @@ def total_cash(total)
 end
 
 def add_or_remove_cash(total_cash, money_earned)
+<<<<<<< HEAD
   return @pet_shop[:admin][:total_cash] += money_earned
 end
 
@@ -24,4 +25,3 @@ end
 
 def pets_by_breed(pet, breed_name)
   p pet[:pets][:breed].find.to_i(breed_name)
-end
